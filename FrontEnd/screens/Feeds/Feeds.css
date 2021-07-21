@@ -16,7 +16,7 @@
 	position: relative;
 }
 
-.album-container{
+.post-container{
 	background-color: white;
 }
 
@@ -46,7 +46,7 @@ button {
 	margin: 10px 0px;
 }
 
-button:focus{
+button.active{
 	color: white;
 	background-color: #4267B2;
 }
@@ -63,6 +63,18 @@ button:focus{
 	color: white;
 	font-size: 12px;
 	padding: 5px;
+}
+
+.post-image {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
 }
 
 .post-header {
@@ -86,4 +98,8 @@ button:focus{
 	display: flex;
 	justify-content: space-between;
 	margin-top: auto;
+}
+
+.album-container {
+	display: none;
 }

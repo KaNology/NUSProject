@@ -35,15 +35,15 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="album-container col-10 mt-4">
+      <div class="post-container col-10 mt-4">
         <div class="row justify-content-center">
-          <button type="button" class="" autofocus>PHOTO</button>
-          <button type="button" class="">ALBUM</button>
+          <button type="button" class="selection-button photo-button active">PHOTO</button>
+          <button type="button" class="selection-button album-button">ALBUM</button>
         </div>
 
-        <div class="row">
+        <div class="photo-container row">
 
-          <div class="post-content-container col-6">
+          <div class="post-content-container photo col-6">
             <div class="row no-gutters">
               <div class="post-image col-6">
                 <img class="img-fluid" data-toggle="modal" data-target="#exampleModalCenter" src="https://th.bing.com/th/id/R.a15ef3be9947e22791325d1daabd1408?rik=WBoJAvs0yYgPag&pid=ImgRaw">
@@ -73,9 +73,15 @@
             </div>
           </div>
 
-          <div class="post-content-container col-6">
+        </div>
+
+        <div class="album-container row">
+
+          <div class="post-content-container album col-6">
             <div class="row no-gutters">
               <div class="post-image col-6">
+                <img class="img-fluid" data-toggle="modal" data-target="#exampleModalCenter" src="https://th.bing.com/th/id/R.7c1f9cf0308ff1bdb7190fd7a02747d6?rik=22Qz3SFfCPvYYw&pid=ImgRaw">
+                <img class="img-fluid" data-toggle="modal" data-target="#exampleModalCenter" src="https://th.bing.com/th/id/R.7c1f9cf0308ff1bdb7190fd7a02747d6?rik=22Qz3SFfCPvYYw&pid=ImgRaw">
                 <img class="img-fluid" data-toggle="modal" data-target="#exampleModalCenter" src="https://th.bing.com/th/id/R.7c1f9cf0308ff1bdb7190fd7a02747d6?rik=22Qz3SFfCPvYYw&pid=ImgRaw">
               </div>
 
@@ -103,32 +109,35 @@
             </div>
           </div>
 
-          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
+        </div>
 
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
+      </div>
+    </div>
+  </div>
 
-                <div class="modal-body">
-                  blah blah
-                </div>
+  <!-- Popup Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
 
-                <div class="modal-footer">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
 
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="modal-body">
+          blah blah
+        </div>
+
+        <div class="modal-footer">
 
         </div>
       </div>
     </div>
   </div>
+  
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
