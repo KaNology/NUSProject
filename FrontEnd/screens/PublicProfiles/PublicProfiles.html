@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="PublicProfiles.css">
+
+  <title>Fotobook</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand font-weight-bold text-light" href="#">Fotobook</a>
+    <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <form class="col-7">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+
+      <div class="d-flex justify-content-around offset-lg-2">
+        <span id="avatar" class="font-weight-bold mr-2">HN</span>
+        <a href="../PublicProfiles/PublicProfiles.html" class="avatar-name font-weight-bold text-light">Hieu Nguyen</a>
+      </div>
+
+      <a class="font-weight-bold text-light ml-5" href="../Login/Login.html">Logout</a>
+    </div>
+  </nav>
+
+  <div id="options" class="ml-4">
+    <a type="button" class="" href="../Feeds/Feeds.html">Feeds</a><br>
+    <a type="button" class="" href="../Discovery/Discovery.html">Discover</a>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="profile-container col-8 mt-3">
+
+        <div class="user-container mt-4 row">
+          <div class="user-avatar text-center col-3">
+            <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="img-fluid rounded-circle">
+          </div>
+
+          <div class="col-9">
+            <span class="following-status rounded-pill text-center">following</span>
+            <h1 class="user-name">Hansford Nguyen</h1>
+            <ul class="tab-list">
+              <li class="tab pr-2"><span style="font-size: 1.5rem">108</span> PHOTOS</li>
+              <li class="tab border-left pl-2 pr-2"><span style="font-size: 1.5rem">43</span> ALBUMS</li>
+              <li class="tab border-left border-right pl-2 pr-2"><span style="font-size: 1.5rem">22</span> FOLLOWINGS</li>
+              <li class="tab pl-2"><span style="font-size: 1.5rem">13</span> FOLLOWERS</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="posts-container row mt-5">
+
+          <!-- post for PHOTO tab -->
+          <div class="posts col-3 text-center">
+            <figure class="figure">
+              <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="figure-img img-fluid rounded mx-auto d-block">
+              <figcaption class="figure-caption text-center">Photo title goes here</figcaption>
+            </figure>
+          </div>
+
+          <!-- post for ALBUM tab -->
+          <div class="posts col-3 text-center">
+            <figure class="figure">
+              <div class="album-container">
+                <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="figure-img img-fluid rounded mx-auto d-block">
+                <div class="photo-number rounded-circle text-center">
+                  <p><strong style="font-size: 1.5rem">105</strong><br>PHOTOS</p>
+                </div>
+              </div>
+              <figcaption class="figure-caption text-center">Album title goes here</figcaption>
+            </figure>
+          </div>
+
+          <!-- post for FOLLOWINGS tab -->
+          <div class="posts col-3 text-center">
+            <div class="rounded pt-3 pb-3" style="background-color: #f3f3f3;">
+              <figure class="figure">
+                <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="figure-img rounded mx-auto d-block rounded-circle" style="width: 100px; height: 100px">
+                <figcaption class="text-center"><h4>Hieu Nguyen</h4></figcaption>
+              </figure>
+              <div class="row no-gutters mb-2 mt-n3">
+                <div class="col-6 text-center" style="color: #4267B2">
+                  <strong style="font-size: 1.5rem">22</strong><br>
+                  <span>PHOTOS</span>
+                </div>
+                <div class="col-6 text-center" style="color: #4267B2">
+                  <strong style="font-size: 1.5rem">105</strong><br>
+                  <span>ALBUMS</span>
+                </div>
+              </div>
+              <span class="following-status rounded-pill text-center mx-auto">following</span>
+            </div>
+          </div>
+
+          <!-- post for FOLLOWERS tab -->
+          <div class="posts col-3 text-center">
+            <div class="rounded pt-3 pb-3" style="background-color: #f3f3f3;">
+              <figure class="figure">
+                <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="figure-img rounded mx-auto d-block rounded-circle" style="width: 100px; height: 100px">
+                <figcaption class="text-center"><h4>Hieu Nguyen</h4></figcaption>
+              </figure>
+              <div class="row no-gutters mb-2 mt-n3">
+                <div class="col-6 text-center" style="color: #4267B2">
+                  <strong style="font-size: 1.5rem">22</strong><br>
+                  <span>PHOTOS</span>
+                </div>
+                <div class="col-6 text-center" style="color: #4267B2">
+                  <strong style="font-size: 1.5rem">105</strong><br>
+                  <span>ALBUMS</span>
+                </div>
+              </div>
+              <span class="following-status rounded-pill text-center mx-auto">following</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- jQuery Validation -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+
+  <script type="text/javascript" src="PublicProfiles.js"></script>
+</body>
+</html>

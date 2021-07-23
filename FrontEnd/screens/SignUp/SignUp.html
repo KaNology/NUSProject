@@ -13,12 +13,18 @@
   <title>Fotobook</title>
 </head>
 <body>
-  <nav class="navbar navbar-light">
+  <nav class="navbar navbar-expand-md navbar-dark">
     <a class="navbar-brand font-weight-bold text-light" href="#">Fotobook</a>
-    <form class="col-6 col-sm-8 col-lg-10">
-      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-    </form>
-    <a class="font-weight-bold text-light" href="../Login/Login.html">Login</a>
+    <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="col-7">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <a class="font-weight-bold text-light offset-4" href="#">Login</a>
+    </div>
   </nav>
 
   <div class="container mt-4">

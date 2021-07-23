@@ -1,0 +1,108 @@
+.navbar {
+	background-color: #4267B2;
+}
+
+#avatar {
+	border: 1px solid white;
+	border-radius: 50%;
+	background-color: white;
+	color: #4267B2;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.container-fluid {
+	background-color: #f3f3f3;
+	position: relative;
+}
+
+#options{
+	display: inline;
+	position: absolute;
+	top: 100px;
+	z-index: 100;
+}
+
+#options a {
+	color: grey;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.profile-container {
+	background-color: white;
+}
+
+.user-avatar img{
+	width: 150px;
+	height: 150px;
+}
+
+.following-status{
+	cursor: pointer;
+	border: 2px solid #ffa852;
+	background-image:
+	linear-gradient(
+		45deg,
+		orange, red
+		);
+	color: white;
+	display: block;
+	width: 100px;
+}
+
+.following-status.active{
+	background-image: none;
+	border: 2px solid #ffa852;
+	/* Set the background color */
+	background: linear-gradient(to right, orange 0%, red 100%);
+	/* Mask the color to the text, and remove the rest  */
+	-webkit-background-clip: text;
+	/* Make the text fill color value transparent so the masked background color comes through */
+	-webkit-text-fill-color: transparent;
+}
+
+.tab-list{
+	display: flex;
+	list-style: none;
+	padding: 0px;
+}
+
+.tab-list li{
+	padding: 0px 5px;
+}
+
+.tab {
+	cursor: pointer;
+}
+
+.tab.active{
+	color: #4267B2;
+	font-weight: bold;
+}
+
+.album-container {
+	position: relative;
+}
+
+.photo-number{
+	/*display: block;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;*/
+	width: 100px;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	text-align: center;
+	display: flex;
+
+
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

@@ -8,26 +8,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="Feeds.css">
+  <link rel="stylesheet" type="text/css" href="Discovery.css">
 
   <title>Fotobook</title>
 </head>
 <body>
-  <!-- <nav class="navbar navbar-expand-md navbar-light">
-    <a class="navbar-brand font-weight-bold text-light" href="#">Fotobook</a>
-
-    <form class="col-2 col-sm-4 col-md-4 col-lg-8">
-      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-    </form>
-
-    <div class="d-flex justify-content-around">
-      <span id="avatar" class="font-weight-bold mr-2">HN</span>
-      <a href="../PublicProfiles/PublicProfiles.html" class="avatar-name font-weight-bold text-light">Hieu Nguyen</a>
-    </div>
-
-    <a class="font-weight-bold text-light mr-sm-4 mr-lg-2 mr-4" href="../Login/Login.html">Logout</a>
-  </nav> -->
-
   <nav class="navbar navbar-expand-md navbar-dark">
     <a class="navbar-brand font-weight-bold text-light" href="#">Fotobook</a>
     <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,9 +34,9 @@
     </div>
   </nav>
 
-  <div id="options" class="ml-sm-4">
-    <a type="button" class="focus" href="#">Feeds</a><br>
-    <a type="button" class="" href="../Discovery/Discovery.html">Discover</a>
+  <div id="options" class="ml-md-4">
+    <a type="button" class="" href="../Feeds/Feeds.html">Feeds</a><br>
+    <a type="button" class="focus" href="#">Discover</a>
   </div>
 
   <div class="container-fluid">
@@ -71,9 +56,14 @@
               </div>
 
               <div class="post-content col-6 p-2">
-                <div class="post-owner">
-                  <span class="font-weight-bold">HN</span>
-                  <a href="#" class="font-weight-bold">Hieu Nguyen</a>
+                <div class="row">
+                  <div class="post-owner col-8">
+                    <span class="font-weight-bold">HN</span>
+                    <a href="#" class="font-weight-bold">Hieu Nguyen</a>
+                  </div>
+                  <div class="col-4">
+                    <span class="following-status rounded-pill text-center mx-auto">following</span>
+                  </div>
                 </div>
                 <div class="post-header mt-4">
                   This is a post header
@@ -107,9 +97,13 @@
               </div>
 
               <div class="post-content col-6 p-2">
-                <div class="post-owner">
-                  <span class="font-weight-bold">HN</span>
-                  <a href="#" class="font-weight-bold">Hieu Nguyen</a>
+                <div class="row" style="position: relative;">
+                  <div class="post-owner">
+                    <span class="font-weight-bold">HN</span>
+                    <a href="#" class="font-weight-bold">Hieu Nguyen</a>
+                  </div>
+
+                  <span class="following-status rounded-pill text-center mx-auto">following</span>
                 </div>
                 <div class="post-header mt-4">
                   This is a post header
@@ -168,6 +162,6 @@
   <!-- jQuery Validation -->
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 
-  <script type="text/javascript" src="Feeds.js"></script>
+  <script type="text/javascript" src="Discovery.js"></script>
 </body>
 </html>
