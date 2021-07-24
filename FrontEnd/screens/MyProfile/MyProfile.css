@@ -33,9 +33,35 @@
 	background-color: white;
 }
 
+.user-info {
+	position: relative;
+}
+
 .user-avatar img{
 	width: 150px;
 	height: 150px;
+}
+
+.edit-profile{
+	cursor: pointer;
+	border: 2px solid #4267B2;
+	color: #4267B2;
+	font-weight: bold;
+	display: block;
+	width: 100px;
+}
+
+.add-photo{
+	cursor: pointer;
+	color: white;
+	background-color: #009933;
+	font-weight: bold;
+	display: block;
+	width: 100px;
+
+	position: absolute;
+	bottom: 0px;
+	right: 1rem;
 }
 
 .following-status{
@@ -82,15 +108,11 @@
 	color: #4267B2;
 }
 
-.album-container {
+.photo-container, .album-container {
 	position: relative;
 }
 
 .photo-number{
-	/*display: block;
-	width: 100px;
-	height: 100px;
-	line-height: 100px;*/
 	width: 100px;
 	height: 100px;
 	justify-content: center;
@@ -99,11 +121,36 @@
 	text-align: center;
 	display: flex;
 
-
 	background-color: rgba(0,0,0,0.4);
 	color: white;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.photo-edit{
+	font-size: 10px;
+	padding: 2px;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+.photo-lock{
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	text-align: center;
+	display: flex;
+
+	color: black;
+
+	background-color: white;
+	position: absolute;
+	right: 5px;
+	top: 5px;
 }

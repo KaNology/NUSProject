@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="PublicProfiles.css">
+  <link rel="stylesheet" type="text/css" href="MyProfile.css">
 
   <title>Fotobook</title>
 </head>
@@ -48,10 +48,9 @@
             <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="img-fluid rounded-circle">
           </div>
 
-          <div class="col-6 col-md-7 col-lg-9">
-            <span class="following-status rounded-pill text-center">following</span>
+          <div class="user-info col-6 col-md-7 col-lg-9">
+            <span class="edit-profile rounded-pill text-center">Edit Profile</span>
             <h1 class="user-name">Hansford Nguyen</h1>
-
             <ul class="tab-list nav">
               <li class="tab pr-2 nav-item">
                 <span style="font-size: 1.5rem">108</span> PHOTOS
@@ -66,6 +65,9 @@
                 <span style="font-size: 1.5rem">13</span> FOLLOWERS
               </li>
             </ul>
+            <span class="add-photo rounded-pill text-center">
+              Add Photo
+            </span>
           </div>
         </div>
 
@@ -74,7 +76,21 @@
           <!-- post for PHOTO tab -->
           <div class="posts col-12 col-sm-6 col-lg-3 text-center">
             <figure class="figure">
-              <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="figure-img img-fluid rounded mx-auto d-block">
+
+              <div class="photo-container">
+                <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="figure-img img-fluid rounded mx-auto d-block">
+
+                <div class="photo-lock rounded-circle text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                  </svg>
+                </div>
+
+                <div class="photo-edit rounded-pill">
+                  EDIT
+                </div>
+              </div>
+
               <figcaption class="figure-caption text-center">Photo title goes here</figcaption>
             </figure>
           </div>
@@ -84,8 +100,19 @@
             <figure class="figure">
               <div class="album-container">
                 <img src="https://th.bing.com/th/id/OIP.JQMcE7P-UnqjHJPCuebtBwHaE7?pid=ImgDet&rs=1" alt="Avatar" class="figure-img img-fluid rounded mx-auto d-block">
+
                 <div class="photo-number rounded-circle text-center">
                   <p><strong style="font-size: 1.5rem">105</strong><br>PHOTOS</p>
+                </div>
+
+                <div class="photo-lock rounded-circle text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                  </svg>
+                </div>
+                
+                <div class="photo-edit rounded-pill">
+                  EDIT
                 </div>
               </div>
               <figcaption class="figure-caption text-center">Album title goes here</figcaption>
@@ -109,7 +136,7 @@
                   <span>ALBUMS</span>
                 </div>
               </div>
-              <span class="following-status rounded-pill text-center mx-auto">following</span>
+              <span class="following-status rounded-pill text-center mx-auto">unfollow</span>
             </div>
           </div>
 
@@ -147,6 +174,6 @@
   <!-- jQuery Validation -->
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 
-  <script type="text/javascript" src="PublicProfiles.js"></script>
+  <script type="text/javascript" src="MyProfile.js"></script>
 </body>
 </html>
