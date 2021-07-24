@@ -1,0 +1,58 @@
+body {
+	background-color: #f3f3f3;
+}
+
+.navbar {
+	background-color: #4267B2;
+}
+
+#avatar {
+	border: 1px solid white;
+	border-radius: 50%;
+	background-color: white;
+	color: #4267B2;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.container-fluid {
+	position: relative;
+}
+
+#options{
+	display: inline;
+	position: absolute;
+	top: 100px;
+	z-index: 100;
+}
+
+#options a {
+	color: grey;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#options a.focus{
+	color: #4267B2;
+}
+
+.profile-container {
+	background-color: white;
+}
+
+.figure-caption {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	display: flex;
+	width: 100%;
+
+	position: absolute;
+	top: 0px;
+	padding: 5px;	
+}
+
+.caption {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

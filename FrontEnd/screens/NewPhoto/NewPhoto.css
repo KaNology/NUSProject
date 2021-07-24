@@ -1,0 +1,54 @@
+body {
+	background-color: #f3f3f3;
+}
+
+.navbar {
+	background-color: #4267B2;
+}
+
+#avatar {
+	border: 1px solid white;
+	border-radius: 50%;
+	background-color: white;
+	color: #4267B2;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.container-fluid {
+	position: relative;
+}
+
+#options{
+	display: inline;
+	position: absolute;
+	top: 100px;
+	z-index: 100;
+}
+
+#options a {
+	color: grey;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.profile-container {
+	background-color: white;
+}
+
+.attached-image {
+	cursor: pointer;
+
+	background-color: #f3f3f3;
+	color: grey;
+	font-weight: bold;
+	font-size: 70px;
+
+	display: block;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+
+	border: 2px dashed grey;
+}

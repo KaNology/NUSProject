@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="EditAlbum.css">
+
+  <title>Fotobook</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand font-weight-bold text-light" href="#">Fotobook</a>
+    <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <form class="col-7">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+
+      <div class="d-flex justify-content-around offset-lg-2">
+        <span id="avatar" class="font-weight-bold mr-2">HN</span>
+        <a href="../PublicProfiles/PublicProfiles.html" class="avatar-name font-weight-bold text-light">Hieu Nguyen</a>
+      </div>
+
+      <a class="font-weight-bold text-light ml-5" href="../Login/Login.html">Logout</a>
+    </div>
+  </nav>
+
+  <div id="options" class="ml-4">
+    <a type="button" class="" href="../Feeds/Feeds.html">Feeds</a><br>
+    <a type="button" class="" href="../Discovery/Discovery.html">Discover</a>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="profile-container col-9 mt-3 pb-5">
+
+        <h3>New Photo</h3>
+        <hr noshade>
+
+        <form>
+          <div class="form-row">
+            <div class="form-group col-12 col-md-6">
+              <label for="title" class="font-weight-bold">Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Photo Title" maxlength="140" required>
+
+              <label for="sharing-mode" class="font-weight-bold mt-3">Sharing mode</label>
+              <select class="form-control w-25" id="sharing-mode" required>
+                <option>Public</option>
+                <option>Private</option>
+              </select>
+            </div>
+
+            <div class="form-group col-12 col-md-6">
+              <label for="description" class="font-weight-bold">Description</label>
+              <textarea class="form-control" id="description" rows="5" placeholder="Photo Description" maxlength="300" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-row" style="position: relative;">
+            <span class="attached-image">
+              +
+            </span>
+            <input type="file" accept="image/png, image/gif, image/jpeg" style="display: block; height: 150px; position: absolute; top: 0px; opacity: 0;" required />
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn btn-success mt-3">Save</button>
+
+            <button type="button" class="btn btn-danger mt-3 ml-5">Delete</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- jQuery Validation -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+
+  <script type="text/javascript" src="EditAlbum.js"></script>
+</body>
+</html>
