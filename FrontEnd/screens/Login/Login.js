@@ -1,21 +1,21 @@
-$(document).ready(function() {
-	$('#signinForm').validate({
-		rules:{
+$(document).ready(function () {
+  $('#signinForm').validate({
+    rules: {
       email: {
-       required: true
-     },
-     password: {
-       required: true
-     }
-   },
-   messages:{
-     email: {
-      required: "Please enter your first name"
+        required: true
+      },
+      password: {
+        required: true
+      }
     },
-    password: {
-      required: "Please enter your password"
+    messages: {
+      email: {
+        required: "Please enter your first name"
+      },
+      password: {
+        required: "Please enter your password"
+      }
     }
-  }
 
-})
+  })
 })
